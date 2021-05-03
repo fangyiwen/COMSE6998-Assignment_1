@@ -1,0 +1,5 @@
+curl -XPOST -u "username:password" "https://search-restaurants-dxtikcwo22drfvdbezfulpktwe.us-east-1.es.amazonaws.com/_bulk" --data-binary @bulk_restaurants.json -H "Content-Type: application/json"
+
+curl -XDELETE -u "username:password" "https://search-restaurants-dxtikcwo22drfvdbezfulpktwe.us-east-1.es.amazonaws.com/restaurants"
+
+curl -XGET -u "username:password" "https://search-restaurants-dxtikcwo22drfvdbezfulpktwe.us-east-1.es.amazonaws.com/restaurants/_search?q=_id:Chinese"
